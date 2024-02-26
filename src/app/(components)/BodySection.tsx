@@ -5,22 +5,22 @@ import invest from "@/assets/invest.d469556b.webp";
 import Image from "next/image";
 const list = [
   {
-    image: "",
+    image: send,
     title: "Send",
     description: "Send & receive money globally in seconds.",
   },
   {
-    image: "",
+    image: spend,
     title: "Spend",
     description: "Virtual master card that fits your digital life.",
   },
   {
-    image: "",
+    image: bank,
     title: "Bank",
     description: "Own multiple international accounts.",
   },
   {
-    image: "",
+    image: invest,
     title: "Invest",
     description: "Buy crypto with as little as $1.",
   },
@@ -29,23 +29,26 @@ const list = [
 const BodySection = () => {
   return (
     <div className="lg:mt-40 max-sm:mt-10 flex flex-col items-center">
-      <div className="bg-red-400 w-10/12 flex items-center max-sm:flex-wrap">
-        {list.map((item, i)=>(
-            <div className="bg-green-300 max-sm:w-6/12 flex flex-col items-center ">
-          <Image
-            src={send}
-            alt="send"
-            width={150}
-            className="max-sm:w-[120px]"
-          ></Image>
-          <h1 className="text-3xl max-sm:text-xl  font-semibold">Send</h1>
-          <p className="tracking-wider text-wrap text-center">
-            Send & receive money globally in seconds
-          </p>
-        </div>
-        )}
-        
-        
+      <div className="w-10/12 flex items-center max-sm:flex-wrap">
+        {list.map((item, i) => (
+          <div
+            key={i}
+            className="max-sm:w-6/12 flex flex-col items-center mb-6"
+          >
+            <Image
+              src={item.image}
+              alt="send"
+              width={150}
+              className="max-sm:w-[120px]"
+            ></Image>
+            <h1 className="text-3xl max-sm:text-xl  font-semibold">
+              {item.title}
+            </h1>
+            <p className="tracking-wide text-wrap text-center">
+              {item.description}
+            </p>
+          </div>
+        ))}
       </div>
     </div>
   );
