@@ -92,13 +92,13 @@ const CreateAccountSection = () => {
           </p>
         </div>
       </section>
-      <section className="flex items-center justify-center mt-10 bg-[url('/Users/a/Documents/EverythingCode/paydayy/src/assets/bgimage.webp')] rounded-2xl">
+      <section className="flex items-center justify-center p-10 mt-10 bg-black rounded-2xl max-sm:flex-col">
         <div className="flex-1 text-primary">
-          <h2>
+          <h2 className="text-4xl max-sm:text-2xl font-bold">
             What are you waiting for? Download the Payday app & get started now!
           </h2>
         </div>
-        <div className="flex flex-1">
+        <div className="flex flex-1 justify-center max-sm:mt-3">
           <Image src={ios} alt="apple-store-icon"></Image>
           <Image src={andriod} alt="google-playstore"></Image>
         </div>

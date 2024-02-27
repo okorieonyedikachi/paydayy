@@ -18,9 +18,6 @@ const config = {
       },
     },
     extend: {
-      backgroundImage: {
-        box: "url('src/assets/bgimage.webp')",
-      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
