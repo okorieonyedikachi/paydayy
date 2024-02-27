@@ -3,6 +3,7 @@ import spend from "@/assets/spend.cd683ed8.webp";
 import bank from "@/assets/bank.0f1ceb86.webp";
 import invest from "@/assets/invest.d469556b.webp";
 import Image from "next/image";
+import CreateAccountSection from "./CreateAccountSection";
 const list = [
   {
     image: send,
@@ -37,7 +38,7 @@ const BodySection = () => {
           >
             <Image
               src={item.image}
-              alt="send"
+              alt={item.title}
               width={150}
               className="max-sm:w-[120px]"
             ></Image>
@@ -50,6 +51,7 @@ const BodySection = () => {
           </div>
         ))}
       </div>
+      <CreateAccountSection />
     </div>
   );
 };
