@@ -7,6 +7,12 @@ import sendMoney from "@/assets/send-money.36a36528.svg";
 import payMoney from "@/assets/paid.54d1e64a.svg";
 import andriod from "@/assets/android.6c54dd0a.svg";
 import ios from "@/assets/ios.73ce1a72.svg";
+import vanguard from "@/assets/vang.svg";
+import cnbc from "@/assets/cnbc.png";
+import yahoo from "@/assets/yahoo_finance.png";
+import premiumtimes from "@/assets/premiumtimes.png";
+import guardian from "@/assets/guardian.png";
+import dailymail from "@/assets/dm2.png";
 
 const CreateAccountSection = () => {
   return (
@@ -92,7 +98,7 @@ const CreateAccountSection = () => {
           </p>
         </div>
       </section>
-      <section className="flex items-center justify-center p-10 mt-10 bg-black rounded-2xl max-sm:flex-col">
+      <section className="flex items-center justify-center lg:py-28 p-10 mt-10 bg-black rounded-2xl max-sm:flex-col">
         <div className="flex-1 text-primary">
           <h2 className="text-4xl max-sm:text-2xl font-bold">
             What are you waiting for? Download the Payday app & get started now!
@@ -103,6 +109,45 @@ const CreateAccountSection = () => {
           <Image src={andriod} alt="google-playstore"></Image>
         </div>
       </section>
+      {/* <section className="mt-10 bg-red-300">
+        <h2>As Feaured In</h2>
+        <div className="flex justify-between h-12 bg-red-400 max-sm:flex-wrap">
+          <Image
+            src={cnbc}
+            alt="cnbc-logo"
+            width={50}
+            className="grayscale hover:grayscale-0"
+          />
+          <Image
+            src={dailymail}
+            alt="cnbc-logo"
+            className="grayscale hover:grayscale-0 w-24"
+          />
+          <Image
+            src={premiumtimes}
+            alt="cnbc-logo"
+            width={150}
+            className="grayscale hover:grayscale-0"
+          />
+          <Image
+            src={vanguard}
+            alt="cnbc-logo"
+            width={150}
+            className="grayscale hover:grayscale-0"
+          />
+          <Image
+            src={guardian}
+            alt="cnbc-logo"
+            width={150}
+            className="grayscale hover:grayscale-0"
+          />
+          <Image
+            src={yahoo}
+            alt="cnbc-logo"
+            className="grayscale hover:grayscale-0 w-60"
+          />
+        </div>
+      </section> */}
     </div>
   );
 };
