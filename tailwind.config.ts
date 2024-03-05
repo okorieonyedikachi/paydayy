@@ -18,6 +18,7 @@ const config = {
       },
     },
     extend: {
+      background: "url('/src/assets/bgimage.webp')",
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
